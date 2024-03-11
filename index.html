@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness App</title>
+  <link rel="manifest" href="/manifest.json">
+  <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #flutter-app {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAm6VFoQ5u4dfDI0EEp6imiwnYN-rqGQbc",
+    authDomain: "tesambw-b5138.firebaseapp.com",
+    projectId: "tesambw-b5138",
+    storageBucket: "tesambw-b5138.appspot.com",
+    messagingSenderId: "952760328243",
+    appId: "1:952760328243:web:834bd82a3ef30af9204346"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+<div id="flutter-app"></div>
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
